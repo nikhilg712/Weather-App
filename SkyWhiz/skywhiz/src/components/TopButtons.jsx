@@ -10,7 +10,7 @@ const TopButtons = () => {
     { id: 6, title: "Sikkim" },
   ];
   return (
-    <div className="flex gap-7">
+    <div className="flex justify-center gap-7">
       {cities.map((city) => (
         <button
           className="text-white font-medium transition ease-out hover:scale-125"

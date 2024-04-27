@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+import { DateTime } from "luxon";
 
-const TimeAndLocation = () => {
+const TimeAndLocation = ({city,country,date,time}) => {
+  // const [formattedDate, setFormattedDate] = useState("");
+  // useEffect(() => {
+  //   const updateDateTime = () => {
+  //     const now = DateTime.now();
+  //     const formattedDate = now.toFormat("EEEE, dd LLLL yyyy | hh:mm a");
+  //     setFormattedDate(formattedDate);
+  //   };
+
+  //   updateDateTime();
+
+  //   setInterval(updateDateTime, 1000);
+
+
+  // }, []); 
+
   return (
     <div>
       <div className="mt-4 flex justify-center text-white text-sm">
-        <p>Friday, 26 April 2024 | Local Time: 5:00 PM </p>
+        <p>{date} | Local Time: {time}</p>
       </div>
-      <div className="text-white text-3xl font-semibold mt-3 ml-[155px]">
-        <span>Faridabad, HR</span>
+      <div className="text-white text-3xl font-semibold mt-3 ml-[200px]">
+        <span>{city}, {country}</span>
       </div>
     </div>
   );

@@ -100,6 +100,8 @@ function App() {
     fetchWeatherData();
   }, [query]);
 
+  
+
 
   return (
     <>

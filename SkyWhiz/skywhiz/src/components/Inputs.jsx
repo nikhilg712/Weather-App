@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Search from "../assets/icons/Search.svg";
-import Location from "../assets/icons/Location.svg";
+
 
 const Inputs = ({ setQuery }) => {
   const [city, setCity] = useState("");

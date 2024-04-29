@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { DateTime,Settings } from "luxon";
+import { DateTime} from "luxon";
 import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
 import TimeAndLocation from "./components/TimeAndLocation";
